@@ -1,0 +1,55 @@
+nav{
+    display: flex;
+    justify-content:space-between;
+    padding:0 42px;
+    background:black;
+    position: relative;
+    .logo{
+        width:120px;
+        background:url('../img/logo_w@svg.svg') no-repeat center center;;
+        text-indent: 120%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .menu{
+        display: flex;
+        a{
+            &:hover{
+                background:$light-color;
+                color:$primary-color;
+            }
+        }
+        .login{
+            @include pad{
+                display:none;
+            }
+        }
+        @include pad{
+            display: none;
+            position: absolute;
+            top:50px;
+            right:0;
+            width:100%;
+            flex-wrap: wrap;
+            background:black;
+            .menu-list{
+                width:100%;
+                text-align: center;
+            }
+        }
+    }
+    a{
+        padding:18px;
+    }
+    .mobile-btn{
+        display:none;
+        @include pad{
+            display:flex;
+        }
+    }
+}
+
+.active{
+    background-color:$light-color;
+    color:$primary-color;
+}

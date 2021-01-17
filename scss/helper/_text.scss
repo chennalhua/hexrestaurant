@@ -1,0 +1,39 @@
+// font-size
+.font-14{font-size: $base-font-size - 2;}
+.font-16{font-size: $base-font-size;}
+.font-18{font-size: $base-font-size * 1.125;}
+.font-20{font-size: $base-font-size * 1.25;}
+.font-24{font-size: $base-font-size * 1.5;}
+.font-36{font-size: $base-font-size * 2.25;}
+.font-48{font-size: $base-font-size * 3;}
+
+@include pad{
+    .font-md-14{font-size: $base-font-size - 2;}
+    .font-md-16{font-size: $base-font-size;}
+    .font-md-18{font-size: $base-font-size * 1.125;}
+    .font-md-20{font-size: $base-font-size * 1.25;}
+    .font-md-24{font-size: $base-font-size * 1.5;}
+    .font-md-36{font-size: $base-font-size * 2.25;}    
+}
+
+@include phone{
+    .font-sm-14{font-size: $base-font-size - 2;}
+    .font-sm-16{font-size: $base-font-size;}
+    .font-sm-18{font-size: $base-font-size * 1.125;}
+    .font-sm-20{font-size: $base-font-size * 1.25;}
+    .font-sm-24{font-size: $base-font-size * 1.5;}
+    .font-sm-36{font-size: $base-font-size * 2.25;}  
+    .font-sm-48{font-size: $base-font-size * 3;}  
+}
+
+// color
+.text-primary{color:$primary-color;}
+.text-secondary{color:$secondary-color;}
+.text-light{color:$light-color;}
+.text-orange{color:$orange-color;}
+
+//social
+.g-color{color:$google-color;}
+.t-color{color:$twitter-color;}
+.f-color{color:$facebook-color;}
+
